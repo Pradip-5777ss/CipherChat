@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "178006940256",
+    "firebase_url": "https://cipherchat-24c56-default-rtdb.firebaseio.com",
+    "project_id": "cipherchat-24c56",
+    "storage_bucket": "cipherchat-24c56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:178006940256:android:428c56f5086d90062f8105",
+        "android_client_info": {
+          "package_name": "com.pradip.cipherchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "178006940256-9q2tt9ju3e9sp1h2hc5ffnukgs19pom6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pradip.cipherchat",
+            "certificate_hash": "6755f429bec848315da751f9782e2797c5de3c3e"
+          }
+        },
+        {
+          "client_id": "178006940256-cpcqfvb7jv2ofvcc8qjjnhntf5f9lpal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_4JnFuWM2YRVmXx6XSwf7c5PTaFa12aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "178006940256-cpcqfvb7jv2ofvcc8qjjnhntf5f9lpal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

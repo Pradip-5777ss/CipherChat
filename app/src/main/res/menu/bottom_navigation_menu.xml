@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/chatsFragment"
+        android:enabled="true"
+        android:icon="@drawable/chat_icon"
+        android:title="Chats" />
+    <item
+        android:id="@+id/groupsFragment"
+        android:enabled="true"
+        android:icon="@drawable/group_icon"
+        android:title="Groups" />
+    <item
+        android:id="@+id/cameraFragment"
+        android:enabled="true"
+        android:icon="@drawable/camera"
+        android:title="Camera" />
+    <item
+        android:id="@+id/callsFragment"
+        android:enabled="true"
+        android:icon="@drawable/dialer"
+        android:title="Call" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+</menu>

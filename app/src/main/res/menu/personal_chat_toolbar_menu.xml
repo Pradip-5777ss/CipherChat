@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/chatsFragment"
+        android:enabled="true"
+        android:icon="@drawable/videocam"
+        app:showAsAction="ifRoom"
+        android:title="video cam"
+        />
+    <item
+        android:id="@+id/groupsFragment"
+        android:enabled="true"
+        android:icon="@drawable/call"
+        app:showAsAction="ifRoom"
+        android:title="voice call"
+         />
+    <item
+        android:id="@+id/cameraFragment"
+        android:enabled="true"
+        android:icon="@drawable/camera"
+        android:title="Camera" />
+    <item
+        android:id="@+id/callsFragment"
+        android:enabled="true"
+        android:icon="@drawable/dialer"
+        android:title="Call" />
+</menu>

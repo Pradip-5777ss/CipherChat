@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.authentication.GetOtp">
+
+    <TextView
+        android:id="@+id/Enter_Code_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        style="@style/textviewStyle"
+        android:maxLines="1"
+        android:text="@string/Enter_Verification_Code"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:id="@+id/Show_Phone_Number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="@string/Show_Number"
+        style="@style/textviewStyle"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Enter_Code_TextView"
+        app:layout_constraintStart_toStartOf="@+id/Enter_Code_TextView"
+        app:layout_constraintTop_toBottomOf="@id/Enter_Code_TextView"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/Otp_Verification_Pin_view"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:itemBackground="@color/light_blue"
+        android:textSize="18sp"
+        app:cursorColor="@color/app_primary_color"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="50dp"
+        app:itemRadius="5dp"
+        app:itemSpacing="10dp"
+        app:itemWidth="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Show_Phone_Number"
+        app:layout_constraintVertical_bias="0.1"
+        app:lineColor="@color/black"
+        app:lineWidth="1dp" />
+
+    <LinearLayout
+        android:id="@+id/Otp_Verification_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/Otp_Verification_Pin_view"
+        app:layout_constraintStart_toStartOf="@+id/Otp_Verification_Pin_view"
+        app:layout_constraintTop_toBottomOf="@id/Otp_Verification_Pin_view">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/textviewStyle"
+            android:text="@string/Resend_SMS"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/Wrong_number_check"
+            android:textAlignment="textEnd"
+            android:textColor="@color/app_primary_color"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/GetOtp_Warning_LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#CDECEBEB"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/Otp_Verification_LinearLayout"
+        app:layout_constraintStart_toStartOf="@+id/Otp_Verification_LinearLayout"
+        app:layout_constraintTop_toBottomOf="@id/Otp_Verification_LinearLayout"
+        app:layout_constraintVertical_bias="0.06">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/error" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_weight="16"
+            android:maxLines="2"
+            android:text="@string/Warning_Text"
+            android:textColor="@color/app_primary_color"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/Otp_Verification_LinearLayout" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/OTP_Verify_Next_Btn"
+        style="@style/Widget.App.Button"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="12dp"
+        app:cornerRadius="10dp"
+        android:padding="8dp"
+        android:text="@string/Verify_OTP_Button_Text"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/GetOtp_Warning_LinearLayout"
+        app:layout_constraintStart_toStartOf="@+id/GetOtp_Warning_LinearLayout"
+        app:layout_constraintTop_toBottomOf="@id/GetOtp_Warning_LinearLayout"
+        app:layout_constraintVertical_bias="0.8" />
+</androidx.constraintlayout.widget.ConstraintLayout>

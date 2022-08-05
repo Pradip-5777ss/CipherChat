@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">CipherChat</string>
+
+    <!--    Phone Number Verification Activity-->
+    <string name="Enter_phone_number">Enter your phone number to get started</string>
+    <string name="Receive_Sms_Verification_Code">You will receive a verification code. Carrier rates may apply.</string>
+    <string name="Phone_Number_Hint">Phone number</string>
+    <string name="Button_text">NEXT</string>
+
+    <!--    Get OTP Activity-->
+    <string name="Enter_Verification_Code">Enter the code we send to</string>
+    <string name="Show_Number">+##########</string>
+    <string name="Resend_SMS">Resend SMS\n(Available in 00:00)</string>
+    <string name="Wrong_number_check">WRONG NUMBER?</string>
+    <string name="Warning_Text">Make sure your phone has cellular signal to receive your SMS or CALL</string>
+    <string name="Verify_OTP_Button_Text">Verify</string>
+
+    <!--    Profile Setup Activity-->
+    <string name="Setup_User_Profile">Set up your profile</string>
+    <string name="First_Name">First name *</string>
+    <string name="Last_Name">Last name</string>
+    <string name="Message">Your profile is fully encrypted. Your profile and changes to it will be visible to your contacts.</string>
+    <string name="contentDescription">TODO</string>
+
+    <!--    Single user layout-->
+    <string name="User_Name">User Name</string>
+    <string name="User_Story">Your Status</string>
+    <string name="Activity_Status">online</string>
+    <string name="Message_Description">Tap to chat</string>
+    <string name="Time">Time</string>
+
+    <!--    Button Text-->
+    <string name="Btn_Next">NEXT</string>
+    <string name="Btn_Verify">VERIFY</string>
+    <string name="Btn_Agree">AGREE AND CONTINUE</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".view.activities.authentication.UserInfoSetup">
+
+    <TextView
+        android:id="@+id/SetupProfile_textView"
+        style="@style/textviewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/Setup_User_Profile"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <RelativeLayout
+        android:id="@+id/SetupProfile_relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SetupProfile_textView"
+        app:layout_constraintStart_toStartOf="@+id/SetupProfile_textView"
+        app:layout_constraintTop_toBottomOf="@id/SetupProfile_textView"
+        app:layout_constraintVertical_bias="0.05">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_CircleImage"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:src="@drawable/person_avatar" />
+
+        <ImageView
+            android:id="@+id/UserInfo_Setup_CameraBtn"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_alignEnd="@id/profile_CircleImage"
+            android:layout_alignBottom="@id/profile_CircleImage"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/contentDescription"
+            android:padding="7dp"
+            android:src="@drawable/android_camera"
+            app:tint="@android:color/black" />
+    </RelativeLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SetupProfile_FirstName_Edittext_Layout"
+        style="@style/textviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:hint="@string/First_Name"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="?attr/colorControlNormal"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="?attr/colorControlNormal"
+        app:hintTextColor="?attr/colorControlNormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SetupProfile_relativeLayout"
+        app:layout_constraintVertical_bias="0.1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SetupProfile_FirstName_Edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/SetupProfile_LastName_Edittext_Layout"
+        style="@style/textviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:hint="@string/Last_Name"
+        app:boxBackgroundMode="filled"
+        app:boxStrokeColor="?attr/colorControlNormal"
+        app:boxStrokeWidthFocused="2dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="?attr/colorControlNormal"
+        app:hintTextColor="?attr/colorControlNormal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SetupProfile_FirstName_Edittext_Layout"
+        app:layout_constraintStart_toStartOf="@+id/SetupProfile_FirstName_Edittext_Layout"
+        app:layout_constraintTop_toBottomOf="@+id/SetupProfile_FirstName_Edittext_Layout"
+        app:layout_constraintVertical_bias="0.04">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/SetupProfile_LastName_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:textSize="16sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/SetupProfile_Message_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Message"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SetupProfile_LastName_Edittext_Layout"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Profile_Setup_Next_Btn"
+        style="@style/Widget.App.Button"
+        android:layout_width="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/Btn_Next"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/SetupProfile_Message_textView"
+        app:layout_constraintStart_toStartOf="@+id/SetupProfile_Message_textView"
+        app:layout_constraintTop_toBottomOf="@+id/SetupProfile_Message_textView"
+        app:layout_constraintVertical_bias="0.7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

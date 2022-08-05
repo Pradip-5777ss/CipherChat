@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:padding="6dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Add_Status_Circular_Image"
+            android:layout_width="66dp"
+            android:layout_height="66dp"
+            android:layout_centerInParent="true"
+            android:padding="6dp"
+            android:src="@drawable/person_account"
+            app:civ_circle_background_color="@color/light_blues" />
+
+        <ImageView
+            android:id="@+id/Add_Status_Circular_Image_AddBTN"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignEnd="@id/Add_Status_Circular_Image"
+            android:layout_alignBottom="@id/Add_Status_Circular_Image"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/circle_background"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/add_circle" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/Add_Status_UserName"
+        style="@style/textviewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxEms="5"
+        android:maxLines="1"
+        android:text="@string/User_Story"
+        android:textSize="12sp" />
+</LinearLayout>
